@@ -1,0 +1,287 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primaryColor: rgb(255, 0, 147);
+}
+
+html,
+body {
+    font-family: Roboto, sans-serif;
+    color: #050f3f;
+}
+
+.outlined-btn {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 1px solid rgba(255, 0, 147, 0.5);
+    color: rgb(255, 0, 147);
+}
+
+.outlined-btn:hover {
+    text-decoration: none;
+    background-color: rgba(255, 0, 147, 0.04);
+    border: 1px solid rgb(255, 0, 147);
+}
+
+.outlined-btn span {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
+
+.contained-btn {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 147);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+        rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+
+.contained-btn:hover {
+    text-decoration: none;
+    background-color: rgb(178, 0, 102);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+        rgba(0, 0, 0, 0.14) 0px 4px 5px 0px,
+        rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: var(--primaryColor);
+    border-radius: 2px;
+    margin: 3px 0px;
+}
+
+.scrolling {
+    display: flex;
+    animation: scroll-left 50s linear infinite;
+    white-space: nowrap;
+    color: #050f2f;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.blockchain_bck {
+    background: #f7f4ff;
+    padding: 5px;
+}
+
+.musicArtistFont {
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.financial_stk {
+    background: linear-gradient(129.49deg, #fd4680 28.13%, #fea75c 57.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-btn {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(255, 255, 255);
+    background-color: hsl(325, 100%, 50%);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+        rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    background: linear-gradient(90deg, #fd4680, #fea75c);
+}
+
+.ellipse {
+    box-sizing: border-box;
+    width: 53px;
+    height: 53px;
+    top: 0;
+    border-radius: 50%;
+    background: #fff;
+    border: 1.6px solid #fe4b7f;
+    margin-left: 15px;
+}
+
+.playArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.playArrow svg {
+    display: block;
+}
+
+.card-shadow {
+    box-shadow: 0 0 9.3578px rgba(0, 0, 0, 0.1);
+}
+
+.brand-card {
+    width: calc(100% / 5 - 10px);
+}
+
+.building-font {
+    line-height: 74px;
+    font-size: 52px;
+    text-align: left;
+}
+
+.rebuilding {
+    background: linear-gradient(94.44deg, #fd4680 34.28%, #fea75c 70.13%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rebuild_music {
+    background: linear-gradient(94.77deg, #1db8ba 8.95%, #28f0c0 19.61%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.how-it {
+    background: linear-gradient(91.6deg, #1db8ba 35.76%, #28f0c0 58.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.pink_gradient {
+    background: linear-gradient(129.49deg, #fd4680 28.13%, #fea75c 57.1%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.music {
+    border: 2px solid #efeef3;
+    border-radius: 0.2rem;
+    margin-bottom: 21px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.music > .music-summary {
+    list-style-type: "";
+    cursor: pointer;
+}
+
+.music > .music-summary {
+    list-style-type: "";
+    cursor: pointer;
+}
+
+.music-summary:before,
+.music[open] .music-summary:before {
+    color: #5d75f3;
+    float: right;
+    font-size: 50px;
+    position: relative;
+    height: 5px;
+    padding-left: 10px;
+}
+
+.music-summary:before {
+    content: "+";
+    top: -25px;
+}
+
+.music[open] .music-summary:before {
+    content: "-";
+    top: -20px;
+}
