@@ -5,12 +5,10 @@
     </div>
     <div class="flex">
       <button class="outlined-btn block">
-        <a href="/#">login/sign up</a>
-        <span></span>
+        <a href="/login">login/sign up</a>
       </button>
       <button class="contained-btn ml-4 block">
         <a href="/#">Token presale</a>
-        <span></span>
       </button>
       <button class="hamburger w-10 p-3">
         <span></span>
